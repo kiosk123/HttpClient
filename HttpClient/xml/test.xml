@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <header>
+    <globalid>3e216ce5710a45388c3fba989f3eb51e</globalid>
+    <interfaceid>000000000005</interfaceid>
+    <res_code>200</res_code>
+    <res_message>내데이터</res_message>
+  </header>
+  <data name="내데이터">
+    <item>SHIRT</item>
+    <color>RED</color>
+    <length>95</length>
+  </data>
+</root>
