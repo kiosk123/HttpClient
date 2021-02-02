@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+import com.hjt.client.HttpClient;
 import com.hjt.util.XMLUtil;
 
 
@@ -24,7 +25,7 @@ public class Main {
 			httpClient.setRequestProperties(params);
 			
 			String xmlString = XMLUtil.convertXMLFileToString(file);			
-			httpClient.writeBody(xmlString.getBytes());
+			httpClient.writeDataInBodyAndSend(xmlString.getBytes());
 			
 			int responseCode = httpClient.getResponseCode();
 			System.out.println("RESPONSE_CODE : "+responseCode);

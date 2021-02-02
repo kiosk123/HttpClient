@@ -20,7 +20,7 @@ public class HttpClient {
 	
 	public HttpClient(String httpAddress, int connTimeOut, int readTimeOut)throws IOException{
 		
-		httpURLConnection = (HttpURLConnection)(new URL(httpAddress).openConnection());
+		this(httpAddress);
 		setConnectTimeout(connTimeOut);
 		setReadTimeout(readTimeOut);
 	}
@@ -47,7 +47,7 @@ public class HttpClient {
 		}
 	}
 	
-	public void writeBody(byte[] body)throws IOException{
+	public void writeDataInBodyAndSend(byte[] body)throws IOException{
 		DataOutputStream out = null;
 		try {
 			out = new DataOutputStream(httpURLConnection.getOutputStream());
@@ -90,4 +90,5 @@ public class HttpClient {
 	public int getResponseCode()throws IOException{
 		return httpURLConnection.getResponseCode();
 	}
+	
 }
