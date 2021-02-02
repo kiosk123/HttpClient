@@ -1,7 +1,7 @@
 
 # Created by https://www.toptal.com/developers/gitignore/api/java,eclipse,vscode
 # Edit at https://www.toptal.com/developers/gitignore?templates=java,eclipse,vscode
-,project
+.project
 .classpath
 
 ### Eclipse ###
@@ -104,3 +104,8 @@ hs_err_pid*
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/java,eclipse,vscode
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build

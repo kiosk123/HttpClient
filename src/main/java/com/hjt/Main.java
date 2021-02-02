@@ -1,13 +1,10 @@
-package main;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import util.XMLUtil;
-import client.HttpClient;
+import com.hjt.util.XMLUtil;
 
 
 public class Main {

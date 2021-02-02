@@ -1,4 +1,4 @@
-package util;
+package com.hjt.util;
 
 import java.io.File;
 import java.io.IOException;
